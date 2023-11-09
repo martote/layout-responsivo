@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+section h2 {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 32px;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(255, 253, 253);
+}
+
+header{
+    padding: 16px 0;
+    background-color: dodgerblue;
+    color: black;
+}
+
+.loja img {
+    float: left;
+}
+
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 24px;
+}
+
+header nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.container  {
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section {
+    padding: 24px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+    color: black;
+}
+
+section p {
+    margin-bottom: 10px;
+}
+
+
+.Store-front {
+    margin-right: 32px;
+    width: 320px;
+}
+
+hr {
+    height: 5px;
+    border-color: blue;
+    background-color: cornflowerblue;
+}
+
+article.Produtos{
+    margin: auto;
+    display: inline;
+}
+
+.Produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    column-gap: none;
+    row-gap: 0;
+}
+
+button {
+    background-color:dodgerblue;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        display: block;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .Store-front {
+        display: block;
+        font-size: 3m;
+    }
+
+    .loja {
+        margin-bottom: 40px;
+    }
+    
+aside {
+    padding-left: 0;
+}
+
+    .Produtos {
+        display: block;
+}
+
+    .article .Produtos {
+        margin-bottom: 32px;
+    }
+
+header div.container {
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) and (max-width:1023) {
+    .container {
+        max-width: 90%;
+    }
+
+    .Produtos {
+        grid-template-columns: repeat(4,20%);    
+}}
+}
+
+
